@@ -1,0 +1,36 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "spfx-application-customizer-ext-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/spfxApplicationCustomizerExt/SpfxApplicationCustomizerExtApplicationCustomizer.js",
+          "manifest": "./src/extensions/spfxApplicationCustomizerExt/SpfxApplicationCustomizerExtApplicationCustomizer.manifest.json"
+        }
+      ]
+    },
+    "spfx-web-part-01-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spfxWebPart01/SpfxWebPart01WebPart.js",
+          "manifest": "./src/webparts/spfxWebPart01/SpfxWebPart01WebPart.manifest.json"
+        }
+      ]
+    },
+    "spfx-web-part-02-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spfxWebPart02/SpfxWebPart02WebPart.js",
+          "manifest": "./src/webparts/spfxWebPart02/SpfxWebPart02WebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpfxApplicationCustomizerExtApplicationCustomizerStrings": "lib/extensions/spfxApplicationCustomizerExt/loc/{locale}.js",
+    "SpfxWebPart01WebPartStrings": "lib/webparts/spfxWebPart01/loc/{locale}.js",
+    "SpfxWebPart02WebPartStrings": "lib/webparts/spfxWebPart02/loc/{locale}.js"
+  }
+}
