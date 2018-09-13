@@ -2,6 +2,7 @@ import * as React from 'react';
 import styles from './SpfxWebPart01.module.scss';
 import { ISpfxWebPart01Props } from './ISpfxWebPart01Props';
 import { escape } from '@microsoft/sp-lodash-subset';
+import Tagpicker from "../../../Common-Controls/TagPicker";
 
 export default class SpfxWebPart01 extends React.Component<ISpfxWebPart01Props, {}> {
   public render(): React.ReactElement<ISpfxWebPart01Props> {
@@ -16,9 +17,12 @@ export default class SpfxWebPart01 extends React.Component<ISpfxWebPart01Props, 
               <a href="https://aka.ms/spfx" className={ styles.button }>
                 <span className={ styles.label }>Learn more</span>
               </a>
+              <Tagpicker/>
             </div>
+           
           </div>
         </div>
+        
       </div>
     );
   }
